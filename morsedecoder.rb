@@ -10,7 +10,6 @@ def decode_char(character)
   morse_dict[character]
 end
 
-
 def decode_word(morse_code)
   morse_code_dict = {
       'A' => '.-', 'B' => '-...', 'C' => '-.-.', 'D' => '-..', 'E' => '.', 'F' => '..-.', 
@@ -26,7 +25,6 @@ def decode_word(morse_code)
   # Split the morse code by space and decode
   return morse_code.split(' ').map { |code| morse_code_dict[code] }.join
 end
-
 
 def decode_message(morse_code)
   morse_code_dict = {
